@@ -1,6 +1,6 @@
 # "Parentless" Instant Clone Community Customization Scripts
 
-This repository contains a collection of community contributed OS customization scripts that can be used with the "Parentless" Instant Clone
+This repository contains a collection of community contributed OS customization scripts that can be used with the new "Parentless" Instant Clone
 
 ## Requirements
 
@@ -9,7 +9,7 @@ This repository contains a collection of community contributed OS customization 
 
 ## How it works
 
-Please see this blog post [here]() for more details.
+Please see this blog post [here](https://www.virtuallyghetto.com/2018/04/new-instant-clone-architecture-in-vsphere-6-7-part-2.html) for more details.
 
 ## Contribution
 
