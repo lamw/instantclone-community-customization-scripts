@@ -69,9 +69,9 @@ localcli network vswitch standard portgroup add -p "Management Network" -v "vSwi
 localcli network ip interface add -i vmk0 -p "Management Network"
 if [ ${NETWORK_TYPE} == "static" ]; then
     localcli network ip interface ipv4 set -i vmk0 -I ${IP_ADDRESS} -N ${NETMASK} -t static
+    localcli network ip route ipv4 add -g ${GATEWAY} -n default
 else
     localcli network ip interface ipv4 set -i vmk0 -t dhcp
-    localcli network ip route ipv4 add -g ${GATEWAY} -n default
 fi
 localcli system hostname set -f ${HOSTNAME}
 
