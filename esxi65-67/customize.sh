@@ -71,11 +71,9 @@ if [ ${NETWORK_TYPE} == "static" ]; then
     localcli network ip interface ipv4 set -i vmk0 -I ${IP_ADDRESS} -N ${NETMASK} -t static
 else
     localcli network ip interface ipv4 set -i vmk0 -t dhcp
-fi
-localcli system hostname set -f ${HOSTNAME}
-if [ ${TYPE} == "static" ]; then
     localcli network ip route ipv4 add -g ${GATEWAY} -n default
 fi
+localcli system hostname set -f ${HOSTNAME}
 
 # Start hostd
 echo "Starting hostd ..."
